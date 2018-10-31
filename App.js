@@ -16,7 +16,6 @@ export default class App extends Component {
       const user = await firebase.auth()
         .signInWithEmailAndPassword(email, password)
         this.setState({ isAuthenticated: true })
-        console.log('USER', user)
     } catch (err) {
         console.log('ERRRRR', err)
     }
